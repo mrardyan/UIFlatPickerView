@@ -1,0 +1,21 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# SwiftPM
+.build/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Other
+*.swp
+*.swo
+
+# By default, ignore anything in the build directory
+build/ 

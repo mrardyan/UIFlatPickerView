@@ -1,4 +1,0 @@
-module FlatPickerPackageTests {
-    header "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/FlatPickerPackageTests-Swift.h"
-    requires objc
-}
