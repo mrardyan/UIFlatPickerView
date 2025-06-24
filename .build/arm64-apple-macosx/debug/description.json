@@ -1,0 +1,618 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.xctest/Contents/MacOS/FlatPickerPackageTests",
+      "packagePath" : "/Users/ardyan/Documents/FlatPicker",
+      "productName" : "FlatPickerPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.FlatPicker-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/sources",
+      "importPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerViewProtocols.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/PickerComponent.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FlatPicker",
+      "moduleOutputPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPicker.swiftmodule",
+      "objects" : [
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView.swift.o",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols.swift.o",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx11.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPicker-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "flatpicker"
+      ],
+      "outputFileMapPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPicker.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerView.swift",
+        "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerViewProtocols.swift",
+        "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/PickerComponent.swift"
+      ],
+      "tempsPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FlatPickerPackageTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/sources",
+      "importPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPickerTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FlatPickerPackageTests",
+      "moduleOutputPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPickerPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx11.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/FlatPickerPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "flatpicker"
+      ],
+      "outputFileMapPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPickerPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FlatPickerTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/sources",
+      "importPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Tests/FlatPickerTests/FlatPickerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPicker.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FlatPickerTests",
+      "moduleOutputPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPickerTests.swiftmodule",
+      "objects" : [
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/FlatPickerTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "flatpicker"
+      ],
+      "outputFileMapPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/FlatPickerTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules/FlatPickerTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ardyan/Documents/FlatPicker/Tests/FlatPickerTests/FlatPickerTests.swift"
+      ],
+      "tempsPath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "FlatPicker" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FlatPicker",
+      "-package-name",
+      "flatpicker",
+      "-incremental",
+      "-c",
+      "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerView.swift",
+      "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerViewProtocols.swift",
+      "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/PickerComponent.swift",
+      "-I",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx11.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPicker-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "flatpicker",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FlatPickerPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FlatPickerPackageTests",
+      "-package-name",
+      "flatpicker",
+      "-incremental",
+      "-c",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx11.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/FlatPickerPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "flatpicker",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FlatPickerTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FlatPickerTests",
+      "-package-name",
+      "flatpicker",
+      "-incremental",
+      "-c",
+      "/Users/ardyan/Documents/FlatPicker/Tests/FlatPickerTests/FlatPickerTests.swift",
+      "-I",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "flatpicker",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "FlatPicker" : [
+
+    ],
+    "FlatPickerPackageTests" : [
+      "FlatPickerTests",
+      "FlatPicker"
+    ],
+    "FlatPickerTests" : [
+      "FlatPicker"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerViewProtocols.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/PickerComponent.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/sources"
+    },
+    "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/sources"
+    },
+    "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/FlatPickerTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ardyan/Documents/FlatPicker/Tests/FlatPickerTests/FlatPickerTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPickerTests.build/sources"
+    },
+    "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

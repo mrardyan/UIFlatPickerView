@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPickerPackageTests.build/master.swiftdeps"
+  },
+  "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPickerPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPickerPackageTests.build/runner.d",
+    "object": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPickerPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPickerPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPickerPackageTests.build/runner.swiftdeps"
+  }
+}

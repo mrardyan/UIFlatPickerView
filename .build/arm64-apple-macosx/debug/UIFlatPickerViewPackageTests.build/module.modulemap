@@ -1,0 +1,4 @@
+module UIFlatPickerViewPackageTests {
+    header "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/UIFlatPickerViewPackageTests.build/UIFlatPickerViewPackageTests-Swift.h"
+    requires objc
+}

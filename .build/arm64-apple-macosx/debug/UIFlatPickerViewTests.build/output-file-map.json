@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/UIFlatPickerViewTests.build/master.swiftdeps"
+  },
+  "/Users/ardyan/Documents/FlatPicker/Tests/UIFlatPickerViewTests/UIFlatPickerViewTests.swift": {
+    "dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/UIFlatPickerViewTests.build/UIFlatPickerViewTests.d",
+    "object": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/UIFlatPickerViewTests.build/UIFlatPickerViewTests.swift.o",
+    "swiftmodule": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/UIFlatPickerViewTests.build/UIFlatPickerViewTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/UIFlatPickerViewTests.build/UIFlatPickerViewTests.swiftdeps"
+  }
+}

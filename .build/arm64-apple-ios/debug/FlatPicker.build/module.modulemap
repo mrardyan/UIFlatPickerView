@@ -1,0 +1,4 @@
+module FlatPicker {
+    header "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-ios/debug/FlatPicker.build/FlatPicker-Swift.h"
+    requires objc
+}

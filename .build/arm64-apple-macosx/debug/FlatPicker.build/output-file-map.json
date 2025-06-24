@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/master.swiftdeps"
+  },
+  "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerView.swift": {
+    "dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView.d",
+    "object": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView.swift.o",
+    "swiftmodule": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView~partial.swiftmodule",
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerView.swiftdeps"
+  },
+  "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/FlatPickerViewProtocols.swift": {
+    "dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols.d",
+    "object": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols.swift.o",
+    "swiftmodule": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols~partial.swiftmodule",
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/FlatPickerViewProtocols.swiftdeps"
+  },
+  "/Users/ardyan/Documents/FlatPicker/Sources/FlatPicker/PickerComponent.swift": {
+    "dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent.d",
+    "object": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent.swift.o",
+    "swiftmodule": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent~partial.swiftmodule",
+    "swift-dependencies": "/Users/ardyan/Documents/FlatPicker/.build/arm64-apple-macosx/debug/FlatPicker.build/PickerComponent.swiftdeps"
+  }
+}
