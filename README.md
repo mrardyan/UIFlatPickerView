@@ -33,7 +33,7 @@ Or add it to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mrardyan/UIFlatPickerView.git", from: "1.0.0")
+    .package(url: "https://github.com/mrardyan/UIFlatPickerView.git", from: "1.0.1")
 ]
 ```
 
@@ -135,7 +135,7 @@ extension YourViewController: UIFlatPickerViewDataSource, UIFlatPickerViewDelega
 }
 ```
 
-## API Changes (2024-06-09)
+## API Changes (v1.0.1)
 
 - Removed `ScrollingStyle` enum and `scrollingStyle` property. Use `infiniteScrollEnabled` (Bool) instead.
 - `selectionIndicatorColor` now applies to all components.
