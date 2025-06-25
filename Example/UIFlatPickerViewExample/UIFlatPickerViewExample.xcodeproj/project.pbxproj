@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38D3787C2E0BCA68003D4A07 /* UIFlatPickerView in Frameworks */ = {isa = PBXBuildFile; productRef = 38D3787B2E0BCA68003D4A07 /* UIFlatPickerView */; };
+		38D378872E0BDBA2003D4A07 /* UIFlatPickerView in Frameworks */ = {isa = PBXBuildFile; productRef = 38D378862E0BDBA2003D4A07 /* UIFlatPickerView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D378872E0BDBA2003D4A07 /* UIFlatPickerView in Frameworks */,
 				38D3787C2E0BCA68003D4A07 /* UIFlatPickerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = UIFlatPickerViewExample;
 			packageProductDependencies = (
 				38D3787B2E0BCA68003D4A07 /* UIFlatPickerView */,
+				38D378862E0BDBA2003D4A07 /* UIFlatPickerView */,
 			);
 			productName = UIFlatPickerViewExample;
 			productReference = 38D378412E0BB8DA003D4A07 /* UIFlatPickerViewExample.app */;
@@ -114,7 +117,7 @@
 			mainGroup = 38D378382E0BB8DA003D4A07;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				38D3787A2E0BCA68003D4A07 /* XCLocalSwiftPackageReference "../../../FlatPicker" */,
+				38D378852E0BDBA2003D4A07 /* XCRemoteSwiftPackageReference "UIFlatPickerView" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 38D378422E0BB8DA003D4A07 /* Products */;
@@ -345,16 +348,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		38D3787A2E0BCA68003D4A07 /* XCLocalSwiftPackageReference "../../../FlatPicker" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../FlatPicker;
+/* Begin XCRemoteSwiftPackageReference section */
+		38D378852E0BDBA2003D4A07 /* XCRemoteSwiftPackageReference "UIFlatPickerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mrardyan/UIFlatPickerView";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		38D3787B2E0BCA68003D4A07 /* UIFlatPickerView */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = UIFlatPickerView;
+		};
+		38D378862E0BDBA2003D4A07 /* UIFlatPickerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38D378852E0BDBA2003D4A07 /* XCRemoteSwiftPackageReference "UIFlatPickerView" */;
 			productName = UIFlatPickerView;
 		};
 /* End XCSwiftPackageProductDependency section */
