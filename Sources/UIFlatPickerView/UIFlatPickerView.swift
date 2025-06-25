@@ -41,15 +41,14 @@ import UIKit
       for componentPicker in componentPickers {
         componentPicker.selectionStyle = selectionStyle
       }
-      updateSelectionViewsVisibility()
     }
   }
 
-  /// The scrolling style for all components
-  @objc public var scrollingStyle = ScrollingStyle.default {
+  /// Enables or disables infinite scrolling for all components
+  @objc public var infiniteScrollEnabled: Bool = false {
     didSet {
       for componentPicker in componentPickers {
-        componentPicker.scrollingStyle = scrollingStyle
+        componentPicker.infiniteScrollEnabled = infiniteScrollEnabled
       }
     }
   }
@@ -74,20 +73,12 @@ import UIKit
     }
   }
 
-  /// The color of the selection indicator
-  @objc public var selectionIndicatorColor: UIColor = .blue {
-    didSet {
-      updateSelectionIndicatorColor()
-    }
-  }
-
   /// Whether the picker view is enabled for user interaction
   @objc public var enabled = true {
     didSet {
       for componentPicker in componentPickers {
         componentPicker.enabled = enabled
       }
-      updateSelectionViewsVisibility()
     }
   }
 
@@ -102,40 +93,16 @@ import UIKit
     selectedRow(inComponent: 0) ?? 0
   }
 
-  // MARK: - Customizable Views
-
-  /// The default selection indicator view
-  @objc public lazy var defaultSelectionIndicator: UIView = {
-    let view = UIView()
-    view.backgroundColor = .black
-    view.alpha = 0.0
-    return view
-  }()
-
-  /// The selection overlay view
-  @objc public lazy var selectionOverlay: UIView = {
-    let view = UIView()
-    view.backgroundColor = .black
-    view.alpha = 0.0
-    return view
-  }()
-
-  /// The selection image view
-  @objc public lazy var selectionImageView: UIImageView = {
-    let imageView = UIImageView()
-    imageView.alpha = 0.0
-    return imageView
-  }()
+  /// The color of the selection indicator for all components
+  @objc public var selectionIndicatorColor: UIColor = .blue {
+    didSet {
+      for component in componentPickers {
+        component.selectionIndicatorColor = selectionIndicatorColor
+      }
+    }
+  }
 
   // MARK: - Enums
-
-  /// Defines the scrolling behavior for the picker components
-  @objc public enum ScrollingStyle: Int {
-    /// Standard scrolling with finite rows
-    case `default`
-    /// Infinite scrolling that loops through the data
-    case infinite
-  }
 
   /// Defines the visual style for selected rows
   @objc public enum SelectionStyle: Int {
@@ -194,30 +161,8 @@ import UIKit
   }
 
   private func setupSelectionViews() {
-    addSubview(defaultSelectionIndicator)
-    addSubview(selectionOverlay)
-    addSubview(selectionImageView)
-
-    defaultSelectionIndicator.translatesAutoresizingMaskIntoConstraints = false
-    selectionOverlay.translatesAutoresizingMaskIntoConstraints = false
-    selectionImageView.translatesAutoresizingMaskIntoConstraints = false
-
-    NSLayoutConstraint.activate([
-      defaultSelectionIndicator.centerYAnchor.constraint(equalTo: centerYAnchor),
-      defaultSelectionIndicator.leadingAnchor.constraint(equalTo: leadingAnchor),
-      defaultSelectionIndicator.trailingAnchor.constraint(equalTo: trailingAnchor),
-      defaultSelectionIndicator.heightAnchor.constraint(equalToConstant: 2),
-
-      selectionOverlay.centerYAnchor.constraint(equalTo: centerYAnchor),
-      selectionOverlay.leadingAnchor.constraint(equalTo: leadingAnchor),
-      selectionOverlay.trailingAnchor.constraint(equalTo: trailingAnchor),
-      selectionOverlay.heightAnchor.constraint(equalToConstant: 44),
-
-      selectionImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-      selectionImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-      selectionImageView.widthAnchor.constraint(equalToConstant: 24),
-      selectionImageView.heightAnchor.constraint(equalToConstant: 24)
-    ])
+    // No need to add defaultSelectionIndicator, selectionOverlay, or selectionImageView
+    // as they are no longer part of the UIFlatPickerView
   }
 
   private func setupComponents() {
@@ -234,33 +179,12 @@ import UIKit
       component.tag = i
       component.dataSource = self
       component.delegate = self
-      component.scrollingStyle = scrollingStyle
+      component.infiniteScrollEnabled = infiniteScrollEnabled
       component.selectionStyle = selectionStyle
       component.enabled = enabled
 
       stackView.addArrangedSubview(component)
       componentPickers.append(component)
-    }
-  }
-
-  private func updateSelectionViewsVisibility() {
-    switch selectionStyle {
-    case .none:
-      defaultSelectionIndicator.alpha = 0.0
-      selectionOverlay.alpha = 0.0
-      selectionImageView.alpha = 0.0
-    case .defaultIndicator:
-      defaultSelectionIndicator.alpha = 1.0
-      selectionOverlay.alpha = 0.0
-      selectionImageView.alpha = 0.0
-    case .overlay:
-      defaultSelectionIndicator.alpha = 0.0
-      selectionOverlay.alpha = 0.3
-      selectionImageView.alpha = 0.0
-    case .image:
-      defaultSelectionIndicator.alpha = 0.0
-      selectionOverlay.alpha = 0.0
-      selectionImageView.alpha = 1.0
     }
   }
 
@@ -270,24 +194,13 @@ import UIKit
     for component in componentPickers {
       component.reloadComponent()
     }
-    selectionOverlay.frame.size.height = rowHeight
-    selectionImageView.frame.size.height = rowHeight
-    defaultSelectionIndicator.frame.size.height = 2.0
     setNeedsLayout()
   }
 
   private func updateTextColor() {
     for component in componentPickers {
-      if let tableView = component.tableView as? UITableView {
-        tableView.reloadData()
-      }
+      component.tableView.reloadData()
     }
-  }
-
-  private func updateSelectionIndicatorColor() {
-    defaultSelectionIndicator.backgroundColor = selectionIndicatorColor
-    selectionOverlay.backgroundColor = selectionIndicatorColor
-    selectionImageView.tintColor = selectionIndicatorColor
   }
 
   // MARK: - Row Selection API

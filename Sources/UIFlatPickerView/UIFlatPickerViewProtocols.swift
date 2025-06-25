@@ -114,7 +114,7 @@ extension UIFlatPickerViewDelegate {
   /// Default implementation returns 0 spacing.
   /// - Parameter pickerView: The picker view requesting this information.
   /// - Returns: 0 points of spacing.
-  public func pickerSpaceBetweenComponents(_ pickerView: UIFlatPickerView) -> CGFloat {
+  public func pickerViewSpacingBetweenComponents(_ pickerView: UIFlatPickerView) -> CGFloat {
     0
   }
 }

@@ -60,20 +60,15 @@ class PickerComponent: UIView {
     indexForRow(currentSelectedRow)
   }
 
-  /// The scrolling style for this component
-  open var scrollingStyle = UIFlatPickerView.ScrollingStyle.default {
+  /// Enables or disables infinite scrolling for this component
+  open var infiniteScrollEnabled: Bool = false {
     didSet {
-      switch scrollingStyle {
-      case .default:
-        infinityRowsMultiplier = 1
-      case .infinite:
-        infinityRowsMultiplier = generateInfinityRowsMultiplier()
-      }
+      infinityRowsMultiplier = infiniteScrollEnabled ? generateInfinityRowsMultiplier() : 1
     }
   }
 
   /// The selection style for this component
-  open var selectionStyle = UIFlatPickerView.SelectionStyle.none {
+  open var selectionStyle: UIFlatPickerView.SelectionStyle = UIFlatPickerView.SelectionStyle.none {
     didSet {
       setupSelectionViewsVisibility()
     }
@@ -85,12 +80,21 @@ class PickerComponent: UIView {
   /// The delegate for this component
   open weak var delegate: PickerComponentDelegate?
 
+  /// The color of the selection indicator
+  open var selectionIndicatorColor: UIColor = .blue {
+    didSet {
+      defaultSelectionIndicator.backgroundColor = selectionIndicatorColor
+      selectionOverlay.backgroundColor = selectionIndicatorColor
+      selectionImageView.tintColor = selectionIndicatorColor
+    }
+  }
+
   // MARK: - Customizable Views
 
   /// The default selection indicator view
   open lazy var defaultSelectionIndicator: UIView = {
     let selectionIndicator = UIView()
-    selectionIndicator.backgroundColor = self.tintColor
+    selectionIndicator.backgroundColor = self.selectionIndicatorColor
     selectionIndicator.alpha = 0.0
     return selectionIndicator
   }()
@@ -98,7 +102,7 @@ class PickerComponent: UIView {
   /// The selection overlay view
   open lazy var selectionOverlay: UIView = {
     let selectionOverlay = UIView()
-    selectionOverlay.backgroundColor = self.tintColor
+    selectionOverlay.backgroundColor = self.selectionIndicatorColor
     selectionOverlay.alpha = 0.0
     return selectionOverlay
   }()
@@ -106,6 +110,7 @@ class PickerComponent: UIView {
   /// The selection image view
   open lazy var selectionImageView: UIImageView = {
     let selectionImageView = UIImageView()
+    selectionImageView.tintColor = self.selectionIndicatorColor
     selectionImageView.alpha = 0.0
     return selectionImageView
   }()
@@ -139,9 +144,8 @@ class PickerComponent: UIView {
   open func selectRow(_ row: Int, animated: Bool) {
     var finalRow = row
 
-    if scrollingStyle == .infinite, row <= numberOfRowsByDataSource {
-      let middleMultiplier =
-        scrollingStyle == .infinite ? (infinityRowsMultiplier / 2) : infinityRowsMultiplier
+    if infiniteScrollEnabled, row <= numberOfRowsByDataSource {
+      let middleMultiplier = infiniteScrollEnabled ? (infinityRowsMultiplier / 2) : infinityRowsMultiplier
       let middleIndex = numberOfRowsByDataSource * middleMultiplier
       finalRow = middleIndex - (numberOfRowsByDataSource - finalRow)
     }
@@ -362,23 +366,29 @@ class PickerComponent: UIView {
   }
 
   private func setupDefaultSelectionIndicator() {
-    defaultSelectionIndicator.translatesAutoresizingMaskIntoConstraints = false
-    addSubview(defaultSelectionIndicator)
+    // Check if already added
+    if defaultSelectionIndicator.superview == nil {
+      defaultSelectionIndicator.translatesAutoresizingMaskIntoConstraints = false
+      addSubview(defaultSelectionIndicator)
+    }
 
-    selectionIndicatorB = defaultSelectionIndicator.bottomAnchor.constraint(
-      equalTo: centerYAnchor, constant: rowHeight / 2)
+    // Only create constraints if they don't exist
+    if selectionIndicatorB == nil {
+      selectionIndicatorB = defaultSelectionIndicator.bottomAnchor.constraint(
+        equalTo: centerYAnchor, constant: rowHeight / 2)
 
-    NSLayoutConstraint.activate([
-      defaultSelectionIndicator.heightAnchor.constraint(equalToConstant: 2.0),
-      defaultSelectionIndicator.widthAnchor.constraint(equalTo: widthAnchor),
-      defaultSelectionIndicator.leadingAnchor.constraint(equalTo: leadingAnchor),
-      selectionIndicatorB,
-      defaultSelectionIndicator.trailingAnchor.constraint(equalTo: trailingAnchor),
-    ])
+      NSLayoutConstraint.activate([
+        defaultSelectionIndicator.heightAnchor.constraint(equalToConstant: 2.0),
+        defaultSelectionIndicator.widthAnchor.constraint(equalTo: widthAnchor),
+        defaultSelectionIndicator.leadingAnchor.constraint(equalTo: leadingAnchor),
+        selectionIndicatorB,
+        defaultSelectionIndicator.trailingAnchor.constraint(equalTo: trailingAnchor),
+      ])
+    }
   }
 
   private func generateInfinityRowsMultiplier() -> Int {
-    if scrollingStyle == .default {
+    if !infiniteScrollEnabled {
       return 1
     }
 
@@ -439,12 +449,11 @@ class PickerComponent: UIView {
   }
 
   private func visibleIndexOfSelectedRow() -> Int {
-    let middleMultiplier =
-      scrollingStyle == .infinite ? (infinityRowsMultiplier / 2) : infinityRowsMultiplier
+    let middleMultiplier = infiniteScrollEnabled ? (infinityRowsMultiplier / 2) : infinityRowsMultiplier
     let middleIndex = numberOfRowsByDataSource * middleMultiplier
     let indexForSelectedRow: Int
 
-    if currentSelectedRow != nil, scrollingStyle == .default, currentSelectedRow == 0 {
+    if currentSelectedRow != nil, !infiniteScrollEnabled, currentSelectedRow == 0 {
       indexForSelectedRow = 0
     } else if currentSelectedRow != nil {
       indexForSelectedRow = middleIndex - (numberOfRowsByDataSource - currentSelectedRow)
