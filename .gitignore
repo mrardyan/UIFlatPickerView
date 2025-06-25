@@ -18,4 +18,9 @@ xcuserdata/
 *.swo
 
 # By default, ignore anything in the build directory
-build/ 
+build/
+
+# Xcode user state files
+*.xcuserstate
+*.xcuserdata
+*.xcuserdatad/ 
